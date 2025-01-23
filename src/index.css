@@ -3,3 +3,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes borderFadeIn {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: inherit;
+  }
+}
+
+@keyframes borderFadeOut {
+  0% {
+    border-color: inherit;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.border-fade-in {
+  animation: borderFadeIn 1s ease-in-out forwards;
+}
+
+.border-fade-out {
+  animation: borderFadeOut 1s ease-in-out forwards;
+}
