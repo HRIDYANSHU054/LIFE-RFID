@@ -1,7 +1,11 @@
-import HomePage from "./pages/HomePage";
+import QuestionScreen from "./pages/QuestionScreen";
 
 function App() {
-  return <HomePage />;
+  return (
+    <div> 
+      <QuestionScreen/>
+    </div>
+  );
 }
 
 export default App;
